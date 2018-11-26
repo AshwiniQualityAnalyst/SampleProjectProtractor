@@ -1,0 +1,15 @@
+{
+  "name": "Platform.Portal.FT",
+  "dependencies": {
+    "protractor": "^5.3.0",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor-jasmine2-html-reporter": "^0.0.7"
+  },
+  "scripts": {
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update",
+    "webdriver-update-ie": "./node_modules/.bin/webdriver-manager update --ie",
+    "webdriver-start": "./node_modules/.bin/webdriver-manager start",
+    "start": "npm run webdriver-update &&npm run webdriver-start &&npm run protractor",
+    "protractor": "./node_modules/.bin/protractor Configuration/configuration.js"
+  }
+}
